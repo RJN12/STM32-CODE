@@ -76,7 +76,7 @@ if ((htim->Instance == TIM3) && present_flag)
 			else
 			{
 				seconds_count ++;
-				if (seconds_count<2)
+				if (seconds_count>2)
 				{
 					HAL_TIM_Base_Stop_IT(&htim3);
 					  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
