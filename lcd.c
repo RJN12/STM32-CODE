@@ -1,3 +1,5 @@
+#define ADDRESS_LCD 0x27
+
 void lcd_send_cmd (char cmd)
 {
   char data_u, data_l,ret1;
